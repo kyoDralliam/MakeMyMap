@@ -19,7 +19,7 @@ jobs:
       - name: Optimize map
         uses: thecodingmachine/map-optimizer-action@master
         with:
-          map-file: test-name.json
+          map-file: workadventure/test-name.json
 
       - name: Bash
         run: |
@@ -34,7 +34,7 @@ jobs:
         with:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           BRANCH: gh-pages # The branch the action should deploy to.
-          FOLDER: . # The folder the action should deploy.
+          FOLDER: workadventure # The folder the action should deploy.
           BASE_BRANCH: master
 
       - name: Bash2
